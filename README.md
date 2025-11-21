@@ -1,47 +1,66 @@
-# Natural Language Processing Laboratory
+# Project Setup and Installation Guide
 
-Installation & Setup
+## 1. Create and activate a virtual environment (recommended)
 
-Follow the steps below to set up the environment and run the project.
-
-1. Create and activate a virtual environment (recommended)
+### Mac / Linux
+```bash
 python3 -m venv venv
-source venv/bin/activate        # Mac / Linux
-venv\Scripts\activate           # Windows
+source venv/bin/activate
+```
 
-2. Install dependencies
+### Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
-This will automatically install the spaCy model (en_core_web_sm) because the wheel URL is included in requirements.txt.
+---
 
+## 2. Install dependencies
+
+The required packages are listed in `requirements.txt`.  
+It also includes the spaCy model (`en_core_web_sm`) via a wheel URL, so no separate model download is required.
+
+```bash
 pip install -r requirements.txt
+```
 
+---
 
-No additional model download command is required.
+## 3. Verify spaCy model installation (optional)
 
-3. Verify spaCy model installation (optional)
+```bash
 python - << 'EOF'
 import spacy
 nlp = spacy.load("en_core_web_sm")
 print("spaCy model loaded successfully.")
 EOF
-
+```
 
 Expected output:
 
+```
 spaCy model loaded successfully.
+```
 
-Notes on Reproducibility
+---
 
-The correct Python version is documented inside requirements.txt as a comment:
+## 4. Notes on Reproducibility
 
-# python==3.12.12
+- Python version is documented inside `requirements.txt` as a comment:
+  ```
+  # python==3.12.12
+  ```
+  This does not interfere with dependency installation but ensures clarity on the intended environment.
 
+- All external dependencies, including the spaCy model, are installed automatically using step 2.
 
-This ensures environment reproducibility without causing installation errors.
+---
 
-All dependencies, including the spaCy model, are installed during step 2.
+## 5. Run the project
 
-Run the project
-python your_script.py
+Replace `your_script.py` with your main file:
 
-This text can be pasted directly into README.md
+```bash
+python nlp_project.py
+```
