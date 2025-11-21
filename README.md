@@ -67,6 +67,4 @@ spaCy model loaded successfully.
 
 ### 5. Run the project
 
-```bash
-python nlp.py
-```
+- The jupyter notebook `NLP_Complete.ipynb` in `/english` directory contains the code for the complete project.
