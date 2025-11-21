@@ -68,3 +68,18 @@ spaCy model loaded successfully.
 ### 5. Run the project
 
 - The jupyter notebook `NLP_Complete.ipynb` contains the code for the complete project.
+
+## NLP Pipeline — Modules Implemented
+
+### 1. Text Preprocessing
+### 2. Part-of-Speech Tagging
+### 3. Morphological Parsing
+### 4. Named Entity Recognition (NER)
+### 5. Chunking
+### 6. Word Sense Disambiguation (Lesk & Adapted Lesk)
+### 7. Coreference Resolution
+### 8. Word Embeddings (Word2Vec)
+### 9. GloVe Embeddings
+### 10. TF–IDF Vectorization
+### 11. Next-Word Prediction (N-gram)
+### 12. Sentence Similarity
