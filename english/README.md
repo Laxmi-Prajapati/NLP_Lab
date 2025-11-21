@@ -67,6 +67,4 @@ spaCy model loaded successfully.
 
 ### 5. Run the project
 
-```bash
-python nlp.py
-```
+- The colab notebook 'NLP_Complete' contains the code to run the complete project.
