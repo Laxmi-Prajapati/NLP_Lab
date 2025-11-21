@@ -1,6 +1,6 @@
 # Natural Language Processing Laboratory
 
-## Project Setup and Installation Guide
+## Setup and Installation Guide
 
 ### 1. Create and activate a virtual environment (recommended)
 
