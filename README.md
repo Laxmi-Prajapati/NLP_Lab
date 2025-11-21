@@ -1,14 +1,16 @@
-# Project Setup and Installation Guide
+# Natural Language Processing Laboratory
 
-## 1. Create and activate a virtual environment (recommended)
+## Project Setup and Installation Guide
 
-### Mac / Linux
+### 1. Create and activate a virtual environment (recommended)
+
+#### Mac / Linux
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### Windows
+#### Windows
 ```bash
 python -m venv venv
 venv\Scripts\activate
@@ -16,7 +18,7 @@ venv\Scripts\activate
 
 ---
 
-## 2. Install dependencies
+### 2. Install dependencies
 
 The required packages are listed in `requirements.txt`.  
 It also includes the spaCy model (`en_core_web_sm`) via a wheel URL, so no separate model download is required.
@@ -25,9 +27,15 @@ It also includes the spaCy model (`en_core_web_sm`) via a wheel URL, so no separ
 pip install -r requirements.txt
 ```
 
+If you still want to manually download the spaCy model (not required unless the wheel URL fails), you can run:
+
+```bash
+python -m spacy download en_core_web_sm
+```
+
 ---
 
-## 3. Verify spaCy model installation (optional)
+### 3. Verify spaCy model installation (optional)
 
 ```bash
 python - << 'EOF'
@@ -45,22 +53,20 @@ spaCy model loaded successfully.
 
 ---
 
-## 4. Notes on Reproducibility
+### 4. Notes on Reproducibility
 
-- Python version is documented inside `requirements.txt` as a comment:
+- The intended Python version is recorded inside `requirements.txt` as a comment:
   ```
   # python==3.12.12
   ```
-  This does not interfere with dependency installation but ensures clarity on the intended environment.
+  This does not interfere with `pip install -r requirements.txt` but keeps the environment specification clear.
 
 - All external dependencies, including the spaCy model, are installed automatically using step 2.
 
 ---
 
-## 5. Run the project
-
-Replace `your_script.py` with your main file:
+### 5. Run the project
 
 ```bash
-python nlp_project.py
+python nlp.py
 ```
