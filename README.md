@@ -2,7 +2,7 @@
 
 ## Setup and Installation Guide
 
-### 1. Create and activate a virtual environment (recommended)
+### 1. Create and activate a virtual environment (recommended but not required)
 
 #### Mac / Linux
 ```bash
