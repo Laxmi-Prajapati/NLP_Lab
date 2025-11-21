@@ -67,4 +67,4 @@ spaCy model loaded successfully.
 
 ### 5. Run the project
 
-- The colab notebook 'NLP_Complete' contains the code to run the complete project.
+- The jupyter notebook `NLP_Complete.ipynb` contains the code for the complete project.
